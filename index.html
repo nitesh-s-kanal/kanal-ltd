@@ -34,6 +34,9 @@
   <meta name="twitter:image" content="https://www.kanalltd.co.uk/assets/og-image-kanal-ltd-zoho-partner-brighton.jpg" />
   <meta property="og:locale" content="en_GB" />
 
+  <!-- EmailJS for contact form emails -->https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/cjs/index.js
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
   <!-- ═══════════════════════════════════════════════════
        PRIMARY SCHEMA — Standalone LocalBusiness entity
        + ProfessionalService + ITService as parentOrganization
@@ -418,7 +421,7 @@
       font-family: var(--font-mono); font-size: .7rem; font-weight: 500;
       letter-spacing: .08em; text-transform: uppercase; color: var(--cyan); margin-bottom: 18px;
     }
-    .mono-tag::before { content: '//'; opacity: .5; }
+    .mono-tag::before { opacity: .5; }
 
     .sh { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.06; letter-spacing: -.03em; color: var(--ink); }
     .sh .c { color: var(--cyan); }
@@ -1059,13 +1062,13 @@
           <span class="hero__stack-label">Certified in:</span>
           <div class="hero__stack-logos">
             <span class="stack-logo" style="gap:6px;padding:0 8px;height:28px;">
-              <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/crm.svg" alt="Zoho CRM implementation dashboard — Kanal LTD Brighton" style="height:16px;width:auto;filter:brightness(0) opacity(0.5);" loading="eager" onerror="this.style.display='none'"> CRM
+              <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/crm.svg" alt="Zoho CRM implementation dashboard — Kanal LTD Brighton" style="height:16px;width:auto;filter:brightness(0) opacity(0.5);" loading="eager" onerror="this.style.display='none'"> CRM -->
             </span>
             <span class="stack-logo" style="gap:6px;padding:0 8px;height:28px;">
-              <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/books.svg" alt="Zoho Books cloud accounting software UK — MTD compliant" style="height:16px;width:auto;filter:brightness(0) opacity(0.5);" onerror="this.style.display='none'"> Books
+              <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/books.svg" alt="Zoho Books cloud accounting software UK — MTD compliant" style="height:16px;width:auto;filter:brightness(0) opacity(0.5);" onerror="this.style.display='none'"> Books -->
             </span>
             <span class="stack-logo" style="gap:6px;padding:0 8px;height:28px;">
-              <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/inventory.svg" alt="Zoho Inventory management system for UK businesses" style="height:16px;width:auto;filter:brightness(0) opacity(0.5);" onerror="this.style.display='none'"> Inventory
+              <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/inventory.svg" alt="Zoho Inventory management system for UK businesses" style="height:16px;width:auto;filter:brightness(0) opacity(0.5);" onerror="this.style.display='none'"> Inventory -->
             </span>
             <span class="stack-logo">TallyPrime</span>
             <span class="stack-logo">Zoho One</span>
@@ -1080,10 +1083,10 @@
           </div>
         </div>
         <!-- SEO IMAGE: crawled by Google Images, visually hidden -->
-        <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/crm.svg"
+        <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/crm.svg"
              alt="Zoho CRM implementation dashboard Brighton UK — sales pipeline lead management and workflow automation configured by Kanal LTD"
              width="1" height="1" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"
-             loading="eager" />
+             loading="eager" /> -->
         <div class="hero__terminal" role="img" aria-label="Kanal LTD Zoho CRM deployment terminal showing authenticated UK connection with CRM, Books and People modules configured — go-live complete">
           <div class="terminal__bar">
             <div class="terminal__dot td-red"></div>
@@ -1178,39 +1181,39 @@
     </div>
     <div class="logo-strip">
       <div class="logo-strip-item">
-        <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/crm.svg" alt="Zoho CRM logo — CRM implementation partner UK" onerror="this.src='';this.style.display='none'">
+        <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/crm.svg" alt="Zoho CRM logo — CRM implementation partner UK" onerror="this.src='';this.style.display='none'"> -->
         <span>Zoho CRM</span>
       </div>
       <div class="logo-strip-item">
-        <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/books.svg" alt="Zoho Books logo — cloud accounting for UK businesses" onerror="this.src='';this.style.display='none'">
+        <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/books.svg" alt="Zoho Books logo — cloud accounting for UK businesses" onerror="this.src='';this.style.display='none'"> -->
         <span>Zoho Books</span>
       </div>
       <div class="logo-strip-item">
-        <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/people.svg" alt="Zoho People logo — HR management platform UK" onerror="this.src='';this.style.display='none'">
+        <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/people.svg" alt="Zoho People logo — HR management platform UK" onerror="this.src='';this.style.display='none'"> -->
         <span>Zoho People</span>
       </div>
       <div class="logo-strip-item">
-        <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/payroll.svg" alt="Zoho Payroll logo — HMRC RTI compliant UK payroll software" onerror="this.src='';this.style.display='none'">
+        <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/payroll.svg" alt="Zoho Payroll logo — HMRC RTI compliant UK payroll software" onerror="this.src='';this.style.display='none'"> -->
         <span>Zoho Payroll</span>
       </div>
       <div class="logo-strip-item">
-        <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/inventory.svg" alt="Zoho Inventory logo — stock management system UK" onerror="this.src='';this.style.display='none'">
+        <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/inventory.svg" alt="Zoho Inventory logo — stock management system UK" onerror="this.src='';this.style.display='none'"> -->
         <span>Zoho Inventory</span>
       </div>
       <div class="logo-strip-item">
-        <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/mail.svg" alt="Zoho Mail logo — business email suite for UK companies" onerror="this.src='';this.style.display='none'">
+        <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/mail.svg" alt="Zoho Mail logo — business email suite for UK companies" onerror="this.src='';this.style.display='none'"> -->
         <span>Zoho Mail</span>
       </div>
       <div class="logo-strip-item">
-        <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/commerce.svg" alt="Zoho Commerce logo — ecommerce platform setup UK" onerror="this.src='';this.style.display='none'">
+        <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/commerce.svg" alt="Zoho Commerce logo — ecommerce platform setup UK" onerror="this.src='';this.style.display='none'"> -->
         <span>Zoho Commerce</span>
       </div>
       <div class="logo-strip-item">
-        <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/bigin.svg" alt="Zoho Bigin logo — small business CRM UK" onerror="this.src='';this.style.display='none'">
+        <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/bigin.svg" alt="Zoho Bigin logo — small business CRM UK" onerror="this.src='';this.style.display='none'"> -->
         <span>Zoho Bigin</span>
       </div>
       <div class="logo-strip-item">
-        <img src="https://tallysolutions.com/wp-content/uploads/2021/04/tally-prime-logo.svg" alt="TallyPrime accounting software UK — Kanal LTD implementation partner" onerror="this.src='';this.style.display='none'" style="height:24px;">
+        <!-- <img src="https://tallysolutions.com/wp-content/uploads/2021/04/tally-prime-logo.svg" alt="TallyPrime accounting software UK — Kanal LTD implementation partner" onerror="this.src='';this.style.display='none'" style="height:24px;"> -->
         <span>TallyPrime</span>
       </div>
     </div>
@@ -1235,9 +1238,9 @@
       <div class="sw-card">
         <div class="sw-card__badge">Zoho · CRM</div>
         <div class="sw-card__icon">
-          <img class="sw-logo-img" src="https://www.zohowebstatic.com/sites/zweb/images/producticons/crm.svg" alt="Zoho CRM implementation dashboard Brighton UK — sales pipeline and lead management software" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="sw-logo-fallback" style="display:none">🎯</span>
+          <!-- <img class="sw-logo-img" src="https://www.zohowebstatic.com/sites/zweb/images/producticons/crm.svg" alt="Zoho CRM implementation dashboard Brighton UK — sales pipeline and lead management software" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="sw-logo-fallback" style="display:none">🎯</span> -->
         </div>
-        <div class="sw-card__name">Zoho CRM <a href="/zoho-crm-implementation/" style="font-family:var(--font-mono);font-size:.6rem;color:var(--cyan);letter-spacing:.06em;font-weight:500;text-decoration:none;opacity:0;transition:opacity .2s;" class="sw-card__deeplink">Full Guide →</a></div>
+        <div class="sw-card__name">Zoho CRM <!-- <a href="/zoho-crm-implementation/" style="font-family:var(--font-mono);font-size:.6rem;color:var(--cyan);letter-spacing:.06em;font-weight:500;text-decoration:none;opacity:0;transition:opacity .2s;" class="sw-card__deeplink">Full Guide →</a> --></div>
         <div class="sw-card__desc">Close more deals with a fully customised sales pipeline. Automate follow-ups, track opportunities, and get a 360° view of every customer — from first touch to repeat purchase.</div>
         <div class="sw-card__tags">
           <span class="sw-tag">Lead Management</span>
@@ -1245,7 +1248,7 @@
           <span class="sw-tag">Dashboards</span>
           <span class="sw-tag">Email Integration</span>
         </div>
-        <a href="/zoho-crm-implementation/" style="display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-family:var(--font-mono);font-size:.68rem;color:var(--cyan);letter-spacing:.04em;text-transform:uppercase;transition:gap .2s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='5px'">Full Implementation Guide →</a>
+        <!-- <a href="/zoho-crm-implementation/" style="display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-family:var(--font-mono);font-size:.68rem;color:var(--cyan);letter-spacing:.04em;text-transform:uppercase;transition:gap .2s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='5px'">Full Implementation Guide →</a> -->
       </div>
 
       <!-- Zoho Books -->
@@ -1254,7 +1257,7 @@
         <div class="sw-card__icon">
           <img class="sw-logo-img" src="https://www.zohowebstatic.com/sites/zweb/images/producticons/books.svg" alt="Zoho Books cloud accounting software UK — MTD compliant VAT returns and invoicing" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="sw-logo-fallback" style="display:none">📊</span>
         </div>
-        <div class="sw-card__name">Zoho Books <a href="/zoho-books-uk/" style="font-family:var(--font-mono);font-size:.6rem;color:var(--cyan);letter-spacing:.06em;font-weight:500;text-decoration:none;opacity:0;transition:opacity .2s;" class="sw-card__deeplink">Full Guide →</a></div>
+        <div class="sw-card__name">Zoho Books <!-- <a href="/zoho-books-uk/" style="font-family:var(--font-mono);font-size:.6rem;color:var(--cyan);letter-spacing:.06em;font-weight:500;text-decoration:none;opacity:0;transition:opacity .2s;" class="sw-card__deeplink">Full Guide →</a> --></div>
         <div class="sw-card__desc">MTD-compliant cloud accounting built for UK businesses. Automate invoicing, bank reconciliation, VAT returns, and get real-time financial visibility without the spreadsheet chaos.</div>
         <div class="sw-card__tags">
           <span class="sw-tag">MTD Compliant</span>
@@ -1262,7 +1265,7 @@
           <span class="sw-tag">Invoicing</span>
           <span class="sw-tag">Bank Sync</span>
         </div>
-        <a href="/zoho-books-uk/" style="display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-family:var(--font-mono);font-size:.68rem;color:var(--cyan);letter-spacing:.04em;text-transform:uppercase;transition:gap .2s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='5px'">MTD Accounting Guide →</a>
+        <!-- <a href="/zoho-books-uk/" style="display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-family:var(--font-mono);font-size:.68rem;color:var(--cyan);letter-spacing:.04em;text-transform:uppercase;transition:gap .2s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='5px'">MTD Accounting Guide →</a> -->
       </div>
 
       <!-- Zoho People -->
@@ -1287,7 +1290,7 @@
         <div class="sw-card__icon">
           <img class="sw-logo-img" src="https://www.zohowebstatic.com/sites/zweb/images/producticons/payroll.svg" alt="Zoho Payroll UK setup — HMRC RTI auto-enrolment compliant payslips Brighton" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="sw-logo-fallback" style="display:none">💷</span>
         </div>
-        <div class="sw-card__name">Zoho Payroll <a href="/zoho-payroll-uk/" style="font-family:var(--font-mono);font-size:.6rem;color:var(--cyan);letter-spacing:.06em;font-weight:500;text-decoration:none;opacity:0;transition:opacity .2s;" class="sw-card__deeplink">Full Guide →</a></div>
+        <div class="sw-card__name">Zoho Payroll <!-- <a href="/zoho-payroll-uk/" style="font-family:var(--font-mono);font-size:.6rem;color:var(--cyan);letter-spacing:.06em;font-weight:500;text-decoration:none;opacity:0;transition:opacity .2s;" class="sw-card__deeplink">Full Guide →</a> --></div>
         <div class="sw-card__desc">Run UK payroll with confidence. HMRC-compliant payslips, RTI submissions, pension auto-enrolment, and seamless integration with Zoho Books — all in a few clicks.</div>
         <div class="sw-card__tags">
           <span class="sw-tag">RTI Compliant</span>
@@ -1295,7 +1298,7 @@
           <span class="sw-tag">Payslips</span>
           <span class="sw-tag">PAYE</span>
         </div>
-        <a href="/zoho-payroll-uk/" style="display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-family:var(--font-mono);font-size:.68rem;color:var(--cyan);letter-spacing:.04em;text-transform:uppercase;transition:gap .2s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='5px'">UK Payroll Guide →</a>
+        <!-- <a href="/zoho-payroll-uk/" style="display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-family:var(--font-mono);font-size:.68rem;color:var(--cyan);letter-spacing:.04em;text-transform:uppercase;transition:gap .2s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='5px'">UK Payroll Guide →</a> -->
       </div>
 
       <!-- Zoho Inventory -->
@@ -1366,9 +1369,9 @@
       <div class="sw-card">
         <div class="sw-card__badge">Tally · Accounting</div>
         <div class="sw-card__icon">
-          <img class="sw-logo-img" src="https://tallysolutions.com/wp-content/uploads/2021/04/tally-prime-logo.svg" alt="TallyPrime accounting software setup UK — multi-company books inventory and payroll Brighton" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" style="filter:brightness(0) invert(1);height:40px;"><span class="sw-logo-fallback" style="display:none">🏦</span>
+          <!-- <img class="sw-logo-img" src="https://tallysolutions.com/wp-content/uploads/2021/04/tally-prime-logo.svg" alt="TallyPrime accounting software setup UK — multi-company books inventory and payroll Brighton" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" style="filter:brightness(0) invert(1);height:40px;"><span class="sw-logo-fallback" style="display:none">🏦</span> -->
         </div>
-        <div class="sw-card__name">TallyPrime <a href="/tallyprime-uk/" style="font-family:var(--font-mono);font-size:.6rem;color:var(--cyan);letter-spacing:.06em;font-weight:500;text-decoration:none;opacity:0;transition:opacity .2s;" class="sw-card__deeplink">Full Guide →</a></div>
+        <div class="sw-card__name">TallyPrime <!-- <a href="/tallyprime-uk/" style="font-family:var(--font-mono);font-size:.6rem;color:var(--cyan);letter-spacing:.06em;font-weight:500;text-decoration:none;opacity:0;transition:opacity .2s;" class="sw-card__deeplink">Full Guide →</a> --></div>
         <div class="sw-card__desc">The world's leading business management software, now fully configured for UK compliance. We implement TallyPrime for multi-company accounting, inventory, payroll, and statutory reporting.</div>
         <div class="sw-card__tags">
           <span class="sw-tag">Multi-Company</span>
@@ -1376,7 +1379,7 @@
           <span class="sw-tag">Inventory</span>
           <span class="sw-tag">Payroll</span>
         </div>
-        <a href="/tallyprime-uk/" style="display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-family:var(--font-mono);font-size:.68rem;color:var(--cyan);letter-spacing:.04em;text-transform:uppercase;transition:gap .2s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='5px'">TallyPrime UK Guide →</a>
+        <!-- <a href="/tallyprime-uk/" style="display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-family:var(--font-mono);font-size:.68rem;color:var(--cyan);letter-spacing:.04em;text-transform:uppercase;transition:gap .2s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='5px'">TallyPrime UK Guide →</a> -->
       </div>
 
       <!-- Custom Development -->
@@ -1397,7 +1400,7 @@
       <div class="sw-card">
         <div class="sw-card__badge">Integration · API</div>
         <div class="sw-card__icon">🔗</div>
-        <div class="sw-card__name">API Integrations <a href="/api-integrations/" style="font-family:var(--font-mono);font-size:.6rem;color:var(--cyan);letter-spacing:.06em;font-weight:500;text-decoration:none;opacity:0;transition:opacity .2s;" class="sw-card__deeplink">Full Guide →</a></div>
+        <div class="sw-card__name">API Integrations <!-- <a href="/api-integrations/" style="font-family:var(--font-mono);font-size:.6rem;color:var(--cyan);letter-spacing:.06em;font-weight:500;text-decoration:none;opacity:0;transition:opacity .2s;" class="sw-card__deeplink">Full Guide →</a> --></div>
         <div class="sw-card__desc">Connect your Zoho ecosystem to any third-party system — Shopify, QuickBooks, Xero, Salesforce, payment gateways, shipping carriers, and more. We build the bridges that make your data flow.</div>
         <div class="sw-card__tags">
           <span class="sw-tag">REST / GraphQL</span>
@@ -1405,7 +1408,7 @@
           <span class="sw-tag">Middleware</span>
           <span class="sw-tag">Real-time Sync</span>
         </div>
-        <a href="/api-integrations/" style="display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-family:var(--font-mono);font-size:.68rem;color:var(--cyan);letter-spacing:.04em;text-transform:uppercase;transition:gap .2s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='5px'">API Integrations Guide →</a>
+        <!-- <a href="/api-integrations/" style="display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-family:var(--font-mono);font-size:.68rem;color:var(--cyan);letter-spacing:.04em;text-transform:uppercase;transition:gap .2s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='5px'">API Integrations Guide →</a> -->
       </div>
 
     </div>
@@ -1426,43 +1429,43 @@
         <div class="svc-tile__num">01 // IMPLEMENTATION</div>
         <div class="svc-tile__icon" role="img" aria-label="Software Implementation — Zoho discovery, configuration, data migration and go-live support">🛠️</div>
         <div class="svc-tile__name">Software Implementation</div>
-        <div class="svc-tile__desc">End-to-end deployment of <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a>, <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a>, and <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> — discovery, configuration, data migration, user training, and go-live support. No guesswork, just results.</div>
-        <a href="/zoho-crm-implementation/" class="svc-tile__link">Learn More →</a>
+        <div class="svc-tile__desc">End-to-end deployment of <!-- <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> -->, <!-- <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a> -->, and <!-- <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> --> — discovery, configuration, data migration, user training, and go-live support. No guesswork, just results.</div>
+        <!-- <a href="/zoho-crm-implementation/" class="svc-tile__link">Learn More →</a> -->
       </div>
       <div class="svc-tile">
         <div class="svc-tile__num">02 // MARKETING</div>
         <div class="svc-tile__icon" role="img" aria-label="Digital Marketing Strategy — SEO paid search social media and email via Zoho Marketing">📈</div>
         <div class="svc-tile__name">Digital Marketing Strategy</div>
-        <div class="svc-tile__desc">Data-driven campaigns built on your <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> data. SEO, paid search, social media, and email marketing — all orchestrated from your Zoho Marketing Automation hub.</div>
-        <a href="/#contact" class="svc-tile__link">Get a Strategy Call →</a>
+        <div class="svc-tile__desc">Data-driven campaigns built on your <!-- <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> --> data. SEO, paid search, social media, and email marketing — all orchestrated from your Zoho Marketing Automation hub.</div>
+        <!-- <a href="/#contact" class="svc-tile__link">Get a Strategy Call →</a> -->
       </div>
       <div class="svc-tile">
         <div class="svc-tile__num">03 // AUTOMATION</div>
         <div class="svc-tile__icon" role="img" aria-label="Workflow Automation — lead routing invoice generation stock alerts and Zoho Flow">⚡</div>
         <div class="svc-tile__name">Workflow Automation</div>
-        <div class="svc-tile__desc">Eliminate manual tasks with intelligent automation — lead routing from <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a>, invoice generation via <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a>, and cross-platform triggers built in Zoho Flow.</div>
-        <a href="/#contact" class="svc-tile__link">Discuss Automation →</a>
+        <div class="svc-tile__desc">Eliminate manual tasks with intelligent automation — lead routing from <!-- <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> -->, invoice generation via <!-- <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a> -->, and cross-platform triggers built in Zoho Flow.</div>
+        <!-- <a href="/#contact" class="svc-tile__link">Discuss Automation →</a> -->
       </div>
       <div class="svc-tile">
         <div class="svc-tile__num">04 // INTEGRATION</div>
         <div class="svc-tile__icon" role="img" aria-label="API and Systems Integration — connect Zoho to ecommerce payments and shipping platforms">🔌</div>
         <div class="svc-tile__name">API & Systems Integration</div>
-        <div class="svc-tile__desc">Connect your entire tech stack. We build secure, reliable <a href="/api-integrations/" style="color:var(--cyan);">API integrations</a> between <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a>, <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a>, ecommerce platforms, and payment gateways.</div>
-        <a href="/api-integrations/" class="svc-tile__link">View Integration Guide →</a>
+        <div class="svc-tile__desc">Connect your entire tech stack. We build secure, reliable <!-- <a href="/api-integrations/" style="color:var(--cyan);">API integrations</a> --> between <!-- <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> -->, <!-- <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> -->, ecommerce platforms, and payment gateways.</div>
+        <!-- <a href="/api-integrations/" class="svc-tile__link">View Integration Guide →</a> -->
       </div>
       <div class="svc-tile">
         <div class="svc-tile__num">05 // TRAINING</div>
         <div class="svc-tile__icon" role="img" aria-label="Training and Onboarding — structured Zoho training sessions video guides and documentation">🎓</div>
         <div class="svc-tile__name">Training & Onboarding</div>
-        <div class="svc-tile__desc">Your team fully trained and confident on <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a>, <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a>, and <a href="/zoho-payroll-uk/" style="color:var(--cyan);">Zoho Payroll</a>. Structured onboarding, video guides, and custom documentation included.</div>
-        <a href="/#contact" class="svc-tile__link">Book Training →</a>
+        <div class="svc-tile__desc">Your team fully trained and confident on <!-- <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> -->, <!-- <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a> -->, and <!-- <a href="/zoho-payroll-uk/" style="color:var(--cyan);">Zoho Payroll</a> -->. Structured onboarding, video guides, and custom documentation included.</div>
+        <!-- <a href="/#contact" class="svc-tile__link">Book Training →</a> -->
       </div>
       <div class="svc-tile">
         <div class="svc-tile__num">06 // SUPPORT</div>
         <div class="svc-tile__icon" role="img" aria-label="Managed Support and Retainers — ongoing Zoho health checks enhancements and troubleshooting">🛡️</div>
         <div class="svc-tile__name">Managed Support & Retainers</div>
-        <div class="svc-tile__desc">Never feel stuck again. Monthly retainer plans covering health checks for your <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a>, <a href="/zoho-books-uk/" style="color:var(--cyan);">Books</a>, <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a>, and <a href="/api-integrations/" style="color:var(--cyan);">integrations</a> — with a dedicated engineer on call.</div>
-        <a href="/#contact" class="svc-tile__link">View Retainer Plans →</a>
+        <div class="svc-tile__desc">Never feel stuck again. Monthly retainer plans covering health checks for your <!-- <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> -->, <!-- <a href="/zoho-books-uk/" style="color:var(--cyan);">Books</a> -->, <!-- <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> -->, and <!-- <a href="/api-integrations/" style="color:var(--cyan);">integrations</a> --> — with a dedicated engineer on call.</div>
+        <!-- <a href="/#contact" class="svc-tile__link">View Retainer Plans →</a> -->
       </div>
     </div>
   </div>
@@ -1613,7 +1616,7 @@
         </div>
         <div class="team-name" itemprop="name">Kanal LTD Founder</div>
         <div class="team-role" itemprop="jobTitle">// Founder &amp; Lead Zoho Consultant</div>
-        <p class="team-bio" itemprop="description">10+ years delivering digital transformation for UK and Ireland SMEs. Specialises in <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> architecture, <a href="/api-integrations/" style="color:var(--cyan);">API integration strategy</a>, and complex multi-system deployments. Personally oversees every implementation at Kanal LTD.</p>
+        <p class="team-bio" itemprop="description">10+ years delivering digital transformation for UK and Ireland SMEs. Specialises in <!-- <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> --> architecture, <!-- <a href="/api-integrations/" style="color:var(--cyan);">API integration strategy</a> -->, and complex multi-system deployments. Personally oversees every implementation at Kanal LTD.</p>
         <div class="team-certs">
           <span class="team-cert-badge">Zoho Certified Partner</span>
           <span class="team-cert-badge">Zoho CRM Expert</span>
@@ -1636,7 +1639,7 @@
         </div>
         <div class="team-name" itemprop="name">Head of Finance &amp; Compliance</div>
         <div class="team-role" itemprop="jobTitle">// Finance Systems Lead</div>
-        <p class="team-bio" itemprop="description">Qualified UK accountant and Zoho Books specialist with deep expertise in HMRC Making Tax Digital, RTI payroll, and multi-company accounting. Leads all <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a>, <a href="/zoho-payroll-uk/" style="color:var(--cyan);">Zoho Payroll</a>, and <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> implementations.</p>
+        <p class="team-bio" itemprop="description">Qualified UK accountant and Zoho Books specialist with deep expertise in HMRC Making Tax Digital, RTI payroll, and multi-company accounting. Leads all <!-- <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a> -->, <!-- <a href="/zoho-payroll-uk/" style="color:var(--cyan);">Zoho Payroll</a> -->, and <!-- <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> --> implementations.</p>
         <div class="team-certs">
           <span class="team-cert-badge">Zoho Books Certified</span>
           <span class="team-cert-badge">HMRC MTD Specialist</span>
@@ -1657,7 +1660,7 @@
         </div>
         <div class="team-name" itemprop="name">Lead Integration Engineer</div>
         <div class="team-role" itemprop="jobTitle">// Senior API &amp; Development Lead</div>
-        <p class="team-bio" itemprop="description">Full-stack engineer specialising in <a href="/api-integrations/" style="color:var(--cyan);">REST API integrations</a>, Zoho Creator custom applications, and enterprise middleware. Has built 200+ integrations connecting Zoho, <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a>, Shopify, Stripe, and Royal Mail for UK businesses.</p>
+        <p class="team-bio" itemprop="description">Full-stack engineer specialising in <!-- <a href="/api-integrations/" style="color:var(--cyan);">REST API integrations</a> -->, Zoho Creator custom applications, and enterprise middleware. Has built 200+ integrations connecting Zoho, <!-- <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> -->, Shopify, Stripe, and Royal Mail for UK businesses.</p>
         <div class="team-certs">
           <span class="team-cert-badge">Zoho Creator Certified</span>
           <span class="team-cert-badge">REST &amp; GraphQL Expert</span>
@@ -1673,7 +1676,7 @@
     </div>
 
     <!-- Team Schema JSON-LD -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -1734,21 +1737,21 @@
         <div class="cert-name">Zoho CRM Certified Expert</div>
         <div class="cert-issuer">Issued by: Zoho Academy</div>
         <div class="cert-year">Certification ID: Verified</div>
-        <div class="cert-verified">✓ <a href="/zoho-crm-implementation/" style="color:var(--cyan);font-size:.6rem;">See CRM Services →</a></div>
+        <div class="cert-verified"><!-- ✓ <a href="/zoho-crm-implementation/" style="color:var(--cyan);font-size:.6rem;">See CRM Services →</a> --></div>
       </div>
       <div class="cert-card">
         <div class="cert-icon" role="img" aria-label="Zoho Books UK accounting certification badge">📊</div>
         <div class="cert-name">Zoho Books UK Certified</div>
         <div class="cert-issuer">Issued by: Zoho Academy</div>
         <div class="cert-year">MTD &amp; Payroll Specialisation</div>
-        <div class="cert-verified">✓ <a href="/zoho-books-uk/" style="color:var(--cyan);font-size:.6rem;">See Books Services →</a></div>
+        <div class="cert-verified"><!-- ✓ <a href="/zoho-books-uk/" style="color:var(--cyan);font-size:.6rem;">See Books Services →</a> --></div>
       </div>
       <div class="cert-card">
         <div class="cert-icon" role="img" aria-label="TallyPrime UK implementation partner badge">🏦</div>
         <div class="cert-name">TallyPrime UK Partner</div>
         <div class="cert-issuer">Issued by: Tally Solutions</div>
         <div class="cert-year">Multi-Company &amp; API Spec.</div>
-        <div class="cert-verified">✓ <a href="/tallyprime-uk/" style="color:var(--cyan);font-size:.6rem;">See TallyPrime →</a></div>
+        <div class="cert-verified"><!-- ✓ <a href="/tallyprime-uk/" style="color:var(--cyan);font-size:.6rem;">See TallyPrime →</a> --></div>
       </div>
     </div>
 
@@ -1851,7 +1854,7 @@
       <!-- Case Study 1: E-Commerce CRM + API -->
       <article class="case-card" itemscope itemtype="https://schema.org/Article" itemprop="itemListElement">
         <div class="case-card__header">
-          <div class="case-industry">E-Commerce · London · <a href="/zoho-crm-implementation/" style="color:var(--cyan);font-size:.63rem;">Zoho CRM</a> + <a href="/api-integrations/" style="color:var(--cyan);font-size:.63rem;">API Integration</a></div>
+          <div class="case-industry">E-Commerce · London · <!-- <a href="/zoho-crm-implementation/" style="color:var(--cyan);font-size:.63rem;">Zoho CRM</a> --> + <!-- <a href="/api-integrations/" style="color:var(--cyan);font-size:.63rem;">API Integration</a> --></div>
           <div class="case-title" itemprop="headline">London Retailer Unifies CRM, Inventory &amp; Shopify in 6 Weeks</div>
           <div class="case-meta">Team size: 28 · Implementation: 6 weeks · Budget: Fixed-price</div>
         </div>
@@ -1862,7 +1865,7 @@
           </div>
           <div>
             <div class="case-label">// The Kanal LTD Solution</div>
-            <div class="case-solution">We implemented <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> with a custom <a href="/api-integrations/" style="color:var(--cyan);">Shopify-to-Zoho API integration</a> that syncs orders, products, and inventory levels in real time. Sales reps now see live stock during customer calls. Zoho Inventory connects to <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a> for automatic invoice generation on order close.</div>
+            <div class="case-solution">We implemented <!-- <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> --> with a custom <!-- <a href="/api-integrations/" style="color:var(--cyan);">Shopify-to-Zoho API integration</a> --> that syncs orders, products, and inventory levels in real time. Sales reps now see live stock during customer calls. Zoho Inventory connects to <!-- <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a> --> for automatic invoice generation on order close.</div>
           </div>
           <div>
             <div class="case-label">// Results After 90 Days</div>
@@ -1886,7 +1889,7 @@
       <!-- Case Study 2: Finance Stack MTD + Payroll -->
       <article class="case-card" itemscope itemtype="https://schema.org/Article" itemprop="itemListElement">
         <div class="case-card__header">
-          <div class="case-industry">Professional Services · Brighton · <a href="/zoho-books-uk/" style="color:var(--cyan);font-size:.63rem;">Zoho Books</a> + <a href="/zoho-payroll-uk/" style="color:var(--cyan);font-size:.63rem;">Zoho Payroll</a></div>
+          <div class="case-industry">Professional Services · Brighton · <!-- <a href="/zoho-books-uk/" style="color:var(--cyan);font-size:.63rem;">Zoho Books</a> --> + <!-- <a href="/zoho-payroll-uk/" style="color:var(--cyan);font-size:.63rem;">Zoho Payroll</a> --></div>
           <div class="case-title" itemprop="headline">Brighton Accountancy Firm Goes MTD-Ready &amp; Cuts Payroll Time by 80%</div>
           <div class="case-meta">Team size: 14 · Implementation: 4 weeks · Budget: Fixed-price</div>
         </div>
@@ -1921,7 +1924,7 @@
       <!-- Case Study 3: TallyPrime Multi-Company + Zoho CRM -->
       <article class="case-card" itemscope itemtype="https://schema.org/Article" itemprop="itemListElement">
         <div class="case-card__header">
-          <div class="case-industry">Manufacturing · Manchester · <a href="/tallyprime-uk/" style="color:var(--cyan);font-size:.63rem;">TallyPrime</a> + <a href="/api-integrations/" style="color:var(--cyan);font-size:.63rem;">Zoho Integration</a></div>
+          <div class="case-industry">Manufacturing · Manchester · <!-- <a href="/tallyprime-uk/" style="color:var(--cyan);font-size:.63rem;">TallyPrime</a> --> + <!-- <a href="/api-integrations/" style="color:var(--cyan);font-size:.63rem;">Zoho Integration</a> --></div>
           <div class="case-title" itemprop="headline">Manchester Manufacturer Consolidates 3 Entities into One TallyPrime System</div>
           <div class="case-meta">Team size: 55 · Implementation: 10 weeks · Budget: Fixed-price</div>
         </div>
@@ -1932,7 +1935,7 @@
           </div>
           <div>
             <div class="case-label">// The Kanal LTD Solution</div>
-            <div class="case-solution">We implemented <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> with multi-company configuration covering all three entities, inter-company transaction automation, and group consolidation reporting. We then built a <a href="/api-integrations/" style="color:var(--cyan);">custom REST API integration</a> syncing Zoho CRM sales orders to TallyPrime, triggering invoice creation and stock reservation automatically on deal close.</div>
+            <div class="case-solution">We implemented <!-- <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> --> with multi-company configuration covering all three entities, inter-company transaction automation, and group consolidation reporting. We then built a <!-- <a href="/api-integrations/" style="color:var(--cyan);">custom REST API integration</a> --> syncing Zoho CRM sales orders to TallyPrime, triggering invoice creation and stock reservation automatically on deal close.</div>
           </div>
           <div>
             <div class="case-label">// Results After 90 Days</div>
@@ -2017,7 +2020,7 @@
     <div class="about-grid">
       <div class="about-visual" role="img" aria-label="Kanal LTD — Brighton-based Zoho Partner, established 2018, serving 150+ UK and Ireland clients with expert Zoho implementation and digital transformation">
         <!-- SEO IMAGE -->
-        <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/people.svg"
+        <!-- <img src="https://www.zohowebstatic.com/sites/zweb/images/producticons/people.svg" -->
              alt="Kanal LTD Brighton office — authorised Zoho Partner team delivering CRM Books People Payroll implementations across UK and Ireland"
              width="1" height="1" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"
              loading="lazy" />
@@ -2035,7 +2038,7 @@
         <h2 class="sh">Brighton's <span class="i">leading</span> <span class="c">Zoho Partner</span></h2>
         <div class="rule"></div>
         <p style="font-size:1rem;color:var(--text-2);line-height:1.78;margin-bottom:20px;font-weight:400;">We started Kanal LTD because we were frustrated watching businesses waste time on disconnected, poorly configured software. Today we're Brighton's most trusted <a href="/#zoho-partner-brighton" style="color:var(--cyan);">Zoho implementation partner</a>, serving clients across the <a href="/#zoho-partner-uk" style="color:var(--cyan);">UK and Ireland</a>.</p>
-        <p style="font-size:1rem;color:var(--text-2);line-height:1.78;margin-bottom:28px;">Our team of certified Zoho engineers, business analysts, and digital marketers implement everything from <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> and <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a> to <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> and <a href="/api-integrations/" style="color:var(--cyan);">custom API integrations</a> — working as an extension of your team to ensure software that actually gets used and delivers ROI.</p>
+        <p style="font-size:1rem;color:var(--text-2);line-height:1.78;margin-bottom:28px;">Our team of certified Zoho engineers, business analysts, and digital marketers implement everything from <!-- <a href="/zoho-crm-implementation/" style="color:var(--cyan);">Zoho CRM</a> --> and <!-- <a href="/zoho-books-uk/" style="color:var(--cyan);">Zoho Books</a> --> to <!-- <a href="/tallyprime-uk/" style="color:var(--cyan);">TallyPrime</a> --> and <!-- <a href="/api-integrations/" style="color:var(--cyan);">custom API integrations</a> --> — working as an extension of your team to ensure software that actually gets used and delivers ROI.</p>
         <div class="about-checks">
           <div class="a-check"><div class="a-check-icon">✓</div><span>Authorised Zoho Partner — independently certified</span></div>
           <div class="a-check"><div class="a-check-icon">✓</div><span>Brighton HQ with remote delivery across UK &amp; Ireland</span></div>
@@ -2327,6 +2330,7 @@
       <h2 class="sh" style="font-size:clamp(1.8rem,3.5vw,2.6rem);">Explore our <span class="c">specialist service pages</span></h2>
       <p style="max-width:580px;margin:16px auto 0;font-size:.95rem;color:var(--text-3);">Each page covers everything you need to know — features, process, compliance, pricing, and FAQs — for that specific product or service.</p>
     </div>
+    <!-- SERVICE CARDS DISABLED - Pages not yet created
     <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;">
       <a href="/zoho-crm-implementation/" style="display:block;text-decoration:none;">
         <div style="background:#FFFFFF;border:1.5px solid var(--border);border-radius:var(--r-lg);padding:24px 18px;text-align:center;transition:all .2s;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05);" onmouseover="this.style.borderColor='rgba(0,229,204,.3)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.08)';this.style.transform='none'">
@@ -2363,6 +2367,7 @@
           <div style="font-family:var(--font-mono);font-size:.62rem;color:var(--cyan);letter-spacing:.05em;">CONNECT SYSTEMS →</div>
         </div>
       </a>
+    -->
     </div>
     <p style="text-align:center;margin-top:20px;font-family:var(--font-mono);font-size:.65rem;color:var(--text-3);letter-spacing:.05em;padding-bottom:4px;">Each page: 800–1,200 words · FAQs · Schema markup · Internal linking · UK-specific content</p>
   </div>
@@ -2569,8 +2574,8 @@
         <p class="footer__tagline">Zoho implementation, TallyPrime, custom development, and API integrations that actually deliver — for UK and Ireland businesses.</p>
         <div class="footer__badge"><span>◉</span> Available for New Projects</div>
         <div class="footer__socials" aria-label="Social media">
-          <a href="#" class="footer__soc" aria-label="LinkedIn">in</a>
-          <a href="#" class="footer__soc" aria-label="Twitter / X">𝕏</a>
+          <!-- <a href="#" class="footer__soc" aria-label="LinkedIn">in</a> -->
+          <!-- <a href="#" class="footer__soc" aria-label="Twitter / X">𝕏</a> -->
           <a href="/cdn-cgi/l/email-protection#721b1c141d3219131c131e1e06165c111d5c0719" class="footer__soc" aria-label="Email">@</a>
         </div>
       </div>
@@ -2624,25 +2629,27 @@
     <div class="footer__bottom">
       <p class="footer__copy">© <span id="yr"></span> Kanal LTD. All rights reserved. Registered in England &amp; Wales. <span style="color:var(--text-3)">Authorised Zoho Partner | Brighton, East Sussex, UK</span></p>
       <div class="footer__legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Cookie Policy</a>
+        <!-- <a href="#">Privacy Policy</a> -->
+        <!-- <a href="#">Terms of Service</a> -->
+        <!-- <a href="#">Cookie Policy</a> -->
       </div>
     </div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+<script>
   // Year
-  document.getElementById('yr').textContent = new Date().getFullYear();
+  (function(){ const yr = document.getElementById('yr'); if (yr) yr.textContent = new Date().getFullYear(); })();
 
   // FAQ toggle
   function toggleFaq(el) {
     const item = el.closest('.faq-item');
+    if (!item) return;
     const isOpen = item.classList.contains('open');
     document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
     if (!isOpen) item.classList.add('open');
-    el.setAttribute('aria-expanded', !isOpen);
+    el.setAttribute('aria-expanded', String(!isOpen));
   }
 
   // Keyboard support for FAQ
@@ -2655,33 +2662,89 @@
   // Mobile menu
   function toggleMenu() {
     const links = document.querySelector('.nav__links');
-    const cta = document.querySelector('.nav__cta');
+    if (!links) return;
     const isVisible = links.style.display === 'flex';
-    links.style.display = isVisible ? '' : 'flex';
-    links.style.flexDirection = 'column';
-    links.style.position = 'fixed';
-    links.style.top = '68px';
-    links.style.left = '0';
-    links.style.right = '0';
-    links.style.background = 'rgba(8,11,17,.98)';
-    links.style.padding = '20px 28px';
-    links.style.borderBottom = '1px solid rgba(255,255,255,.08)';
-    links.style.zIndex = '999';
-    if (isVisible) links.style.display = 'none';
+    if (isVisible) {
+      links.style.display = 'none';
+      links.style.position = '';
+      links.style.top = '';
+      links.style.left = '';
+      links.style.right = '';
+      links.style.background = '';
+      links.style.padding = '';
+      links.style.borderBottom = '';
+      links.style.zIndex = '';
+    } else {
+      links.style.display = 'flex';
+      links.style.flexDirection = 'column';
+      links.style.position = 'fixed';
+      links.style.top = '68px';
+      links.style.left = '0';
+      links.style.right = '0';
+      links.style.background = 'rgba(8,11,17,.98)';
+      links.style.padding = '20px 28px';
+      links.style.borderBottom = '1px solid rgba(255,255,255,.08)';
+      links.style.zIndex = '999';
+    }
   }
 
   // Form submit
+  // Initialize EmailJS (replace with your public key)
+  const EMAIL_PUBLIC_KEY = 'aYOcKVKRj8IjLxTz4'; // Get from emailjs.com dashboard
+  const EMAIL_SERVICE_ID = 'service_m4wj3if';         // Create email service
+  const EMAIL_TEMPLATE_ID = 'template_mp2t5hg';       // Create email template
+  
+  emailjs.init(EMAIL_PUBLIC_KEY);
+
   function handleSubmit(e) {
     e.preventDefault();
     const form = e.target;
-    form.style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.textContent;
+    
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    // Collect form data
+    const formData = {
+      first_name: form.querySelector('#fname').value,
+      last_name: form.querySelector('#lname').value,
+      email: form.querySelector('#email').value,
+      phone: form.querySelector('#phone').value || 'Not provided',
+      service: form.querySelector('#service').value,
+      message: form.querySelector('#message').value || 'No message provided',
+      reply_to: form.querySelector('#email').value
+    };
+
+    // Send email via EmailJS
+    emailjs.send(EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, formData)
+      .then(response => {
+        // Success - hide form and show success message
+        form.style.display = 'none';
+        const success = document.getElementById('form-success');
+        if (success) success.style.display = 'block';
+        
+        // Log success
+        console.log('Email sent successfully', response);
+      })
+      .catch(error => {
+        // Error handling
+        console.error('Email send failed:', error);
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+        
+        // Show error message
+        alert('Sorry, there was an issue sending your message. Please try again or contact us directly at info@kanalltd.co.uk');
+      });
   }
 
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      if (!href || href === '#') return; // Skip empty hrefs
+      const target = document.querySelector(href);
       if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
     });
   });
@@ -2693,9 +2756,15 @@
     });
   }, { threshold: 0.1 });
 
+  // Animate and observe cards
   document.querySelectorAll('.sw-card, .svc-tile, .testi-card, .stat-card').forEach((el, i) => {
     el.style.opacity = '0';
-    el.style.transfor
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    // staggered reveal
+    setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; }, i * 100);
+    io.observe(el);
+  });
 </script>
 </body>
 </html>
