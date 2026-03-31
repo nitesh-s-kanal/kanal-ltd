@@ -39,6 +39,8 @@
         const urlParams = new URLSearchParams(window.location.search);
         const payloadFromUrl = urlParams.get('payload');
         const key = urlParams.get('key');
+
+        console.log("URL parameters received - payload:", payloadFromUrl, "key:", key);
         
         if (payloadFromUrl) {
             // Decrypt payload locally
