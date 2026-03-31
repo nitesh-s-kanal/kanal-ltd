@@ -1,0 +1,154 @@
+layout: page
+title: "Integra-Tally"
+permalink: /customer/integra/issuetaxrefund
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Form Submission</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .status {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    
+    $(document).ready(function() {
+        console.log("Document is ready. Initiating form submission.");
+        $("#sessiontoken").val("");
+        $("#issuemodel").val("");
+        
+        // Check if encrypted data is in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const payloadFromUrl = urlParams.get('payload');
+        const key = urlParams.get('key');
+        
+        if (payloadFromUrl) {
+            // Decrypt payload locally
+            console.log("Encrypted payload found in URL:", payloadFromUrl);
+            decryptFromServer(payloadFromUrl);
+            getSessionToken();
+        } else {
+            return;
+        }
+    });
+
+    function decryptFromServer(payloadBase64) {
+        try {
+            console.log("Decrypting payload locally...");
+            
+            // Decode the base64 payload to get the JSON string
+            const decodedPayload = atob(payloadBase64);
+            console.log("Decoded payload:", decodedPayload);
+            
+            // Parse the JSON to get ciphertext, iv, and salt
+            const decryptedJson = JSON.parse(decodedPayload);
+            
+            // Set the decrypted JSON to the issuemodel field
+            $("#issuemodel").val(JSON.stringify(decryptedJson));
+            console.log("Decrypted data successfully set in issuemodel field");
+        } catch (error) {
+            console.error("Error decrypting payload:", error);
+            $(".status").text("Error decrypting payload: " + error.message);
+        }
+    }
+
+    function getSessionToken() {
+        console.log("Fetching session token from server...");
+        $.ajax({
+            url: 'https://ic2integra.test.globalblue.com/service/api/UserAuthentication/RequestSessionToken',
+            method: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                "Username": "Test_Merchant",
+                "Password": "Test$T11",
+                "TokenLifetime": 3600
+            }),
+            success: function(response) {
+                console.log("Session token received:", response);
+                $("#sessiontoken").val(response.Token);
+                // wait 2 seconds before submitting the form to ensure the token is set
+                setTimeout(function() {
+                    console.log("Submitting form with session token...");
+                    $("#autoForm").submit();
+                }, 2000);
+
+                $("#autoForm").submit();
+            },
+            error: function(xhr, status, error) {
+                console.error("Error fetching session token:", error);
+                $(".status").text("Failed to fetch session token. Please try again.");
+            }
+        });
+    }
+</script>
+<body>
+    <div class="container">
+        <div class="status">Processing and submitting form...</div>
+    </div>
+    
+    <form id="autoForm" method="POST" onsubmit="return target_popup(this)" style="display: none;">
+        <button type="submit">Submit</button>
+        <input type="text" id="sessiontoken" name="sessiontoken" value="">
+        <input type="hidden" id="issuemodel" name="issuemodel" value="">
+    </form>
+
+    <script>
+        function target_popup(form)
+        {
+            console.log("Form submission initiated.");
+            // $.getJSON('test.json', function(data) {
+            //      $("#issuemodel").val(JSON.stringify(data));
+            // });
+            // $("#issuemodel").val(issuemodelJSONstring);
+            // $("#sessiontoken").val(sessionToken);
+            console.log($("#issuemodel").val());
+            console.log($("#sessiontoken").val());
+            window.open('', 'formpopup', "width=" + screen.availWidth + ",height=" + screen.availHeight + ',resizeable,scrollbars,toolbar=no,location=no,status=no,menubar=no');
+            form.target = 'formpopup';
+            let issueposturl = "https://ic2integra.test.globalblue.com/ui/integra";
+            form.action = issueposturl;
+            return true;
+        }
+        window.addEventListener("message", receiveMessage, false);
+        function receiveMessage(event)
+        {
+            if (event != null && event.data != null && event.data != "")
+            {
+                let ic2response = event.data;
+                if (ic2response.originator === "IC2")
+                {
+                    var issueprettyres = JSON.stringify(ic2response, undefined, 4);
+                    console.log(issueprettyres);
+
+                    //extract document identifier
+                    var docIdentifier = ic2response.actionResponse.documentIdentifier;
+                    console.log("Document Identifier:", docIdentifier);
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
